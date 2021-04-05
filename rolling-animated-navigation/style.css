@@ -1,0 +1,121 @@
+/* Import google font */
+@import url('https://fonts.googleapis.com/css2?family=Muli&display=swap');
+
+*{
+    box-sizing: border-box;
+}
+
+/* Styling Body element */
+body {
+    background-color: #eafbff;
+    background-image: linear-gradient(
+        to bottom,
+        #eafbff 0%,
+        #eafbff 50%,
+        #5290f9 50%,
+        #5290f9 100%
+    );
+    font-family: "Muli", sans-serif;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+/* General style for navbar */
+nav {
+    background-color: #fff;
+    padding: 20px;
+    width: 80px; /* just for the button */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 3px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    transition: width 0.6s linear;
+    overflow-x: hidden;
+}
+
+/* When button clicked change navbar width to 350px */
+nav.active {
+    width: 350px;
+}
+
+/* make unordered list flat(flat menu) */
+nav ul {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    width: 0;
+    transition: width 0.6s linear;
+}
+
+/* when active[button clicked], change width */
+nav.active ul {
+    width: 100%;
+}
+
+/* style list item (menu/nav) */
+nav ul li {
+    list-style-type: none;
+    transform: rotateY(0deg);
+    opacity: 0;
+    transition: transform 0.6s linear, opacity 0.6s linear;
+}
+
+/* When active, change menu item */
+nav.active ul li {
+    margin: 0 10px;
+    opacity: 1;
+    transform: rotateY(360deg);
+}
+
+/* style nav link */
+nav ul li a {
+    /* position: relative; */
+    text-decoration: none;
+    color: black;
+}
+
+/* style button */
+.icon {
+    background-color: #fff;
+    border: 0;
+    cursor: pointer;
+    padding: 0;
+    position: relative;
+    width: 30px;
+    height: 30px;
+}
+
+.icon:focus {
+    outline: 0;
+}
+
+/* styling button item and positioning [every side of the cross] */
+.icon .line {
+    background-color: #5290f9;
+    height: 2px;
+    width: 20px;
+    position: absolute;
+    top: 10px;
+    left: 5px;
+    transition: transform 0.6s linear;
+}
+
+/* position line 2 of button */
+.icon .line2 {
+    top: auto;
+    bottom: 10px;
+}
+
+/* line 1: When active, change the position */
+nav.active .icon .line1 {
+    transform: rotate(-765deg) translateY(5.5px)
+}
+/* line 2: When active, change the position */
+nav.active .icon .line2 {
+    transform: rotate(765deg) translateY(-5.5px);
+}
