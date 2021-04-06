@@ -1,0 +1,128 @@
+/* Import google font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+:root {
+    --primary-color: #22254b;
+    --secondary-color: #373b69;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--primary-color);
+    color: white;
+    font-family: "Poppin", sans-serif;
+    margin: 0;
+}
+
+/* Header styling */
+header {
+    background-color: var(--secondary-color);
+    margin: 0;
+    padding: 1rem;
+    display: flex;
+    justify-content: flex-end;
+}
+
+/* Search input style */
+#search {
+    background-color: transparent;
+    border: 2px solid var(--primary-color);
+    font-family: inherit;
+    padding: 0.3rem 0.8rem;
+    border-radius: 50px;
+    font-size: 1rem;
+    color: #fff;
+}
+
+#search::placeholder {
+    color: #7378c5
+}
+
+/* When clicked */
+#search:focus {
+    outline: none;
+    background-color: var(--primary-color);
+}
+
+/* All the movie cards container */
+main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+/* Every movie card */
+.movie {
+    width: 300px;
+    margin: 1rem;
+    background-color: var(--secondary-color);
+    border-radius: 5px;
+    box-shadow: 0 4px 5px rgba(0, 0, 0, 0.3);
+    position: relative;
+    overflow: hidden;
+}
+
+.movie img {
+    width: 100%;
+}
+
+/* Title and rating container */
+.movie-info {
+    padding: 0.5rem 1rem 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.movie-info h3 {
+    margin: 0;
+}
+
+/* Rating Style */
+.movie-info span {
+    background-color: var(--primary-color);
+    padding: 0.25rem 0.5rem;
+    border-radius: 3px;
+    font-weight: bold;
+    color: lightgreen;
+}
+
+/* Rating color */
+.movie-info span.orange {
+    color: orange;
+}
+.movie-info span.red {
+    color: red;
+}
+
+/* Movie overview: initially hidden */
+.overview {
+    background-color: #fff;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    letter-spacing: 1px;
+    max-height: 100%;
+    width: 100%;
+    color: black;
+    padding: 1rem;
+    overflow-y: auto;
+    transform: translateY(102%);
+    transition: transform 0.3s ease-in;
+}
+
+/* Show when hovered over */
+.movie:hover .overview {
+    transform: translateY(0);
+}
+
+/* @media(max-width: 500px) {
+    .movie {
+        width: 200px;
+    }
+} */
