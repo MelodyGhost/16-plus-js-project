@@ -117,4 +117,5 @@ Another is for filled section (percentage)
 
 .text {
     margin: 0 0 5px;
+    text-align: center;
 }
