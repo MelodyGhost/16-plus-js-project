@@ -1,0 +1,133 @@
+/* Import google font */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+*{
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    margin: 0;
+    height: 100vh;
+    overflow: hidden;
+}
+
+/* Count down and final window same initial style */
+.count-down, .final {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    text-align: center;
+}
+
+/* Initially count down is visible */
+.count-down {
+    transform: translate(-50%, -50%) scale(1);
+    transition: transform 200ms ease-out;
+}
+
+/* Scale down when hide class applied */
+.count-down.hide {
+    transform: translate(-50%, -50%) scale(0);
+}
+
+.count-down h3 {
+    margin: 5px;
+    text-transform: uppercase;
+}
+
+/* Initially final window is hidden */
+.final {
+    transform: translate(-50%, -50%) scale(0);
+}
+
+/* display it when show class is applied */
+.final.show {
+    transform: translate(-50%, -50%) scale(1);
+    animation: show 200ms ease-out;
+}
+
+/* final window entry animation */
+@keyframes show {
+    0% {
+        transform: translate(-50%, -50%) scale(0);
+    }
+    50% {
+        transform: translate(-50%, -50%) scale(1.3);
+    }
+    100% {
+        transform: translate(-50%, -50%) scale(1);
+    }
+}
+
+/* Styling Number container */
+.count-down .count {
+    position: relative;
+    color:darkturquoise;
+    font-size: 50px;
+    height: 50px;
+    width: 250px;
+
+    /* Important: hide the number outside the container */
+    overflow: hidden; 
+}
+
+/* Cool rotating effect */
+.count span {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(120deg);
+    transform-origin: bottom center;
+}
+
+/* Rotate the number in */
+.count span.in {
+    transform: translate(-50%, -50%) rotate(0);
+    animation: in 500ms ease-in-out;
+}
+/* Rotate the number out */
+.count span.out {
+    transform: translate(-50%, -50%) rotate(-120deg);
+    animation: out 500ms ease-in-out;
+}
+
+/* number in animation */
+@keyframes in {
+    0% {
+        transform: translate(-50%, -50%) rotate(120deg);
+    }
+    30% {
+        transform: translate(-50%, -50%) rotate(-20deg);
+    }
+    70% {
+        transform: translate(-50%, -50%) rotate(20deg);
+    }
+    100% {
+        transform: translate(-50%, -50%) rotate(0);
+    }
+}
+
+/* number out animation */
+@keyframes out {
+    0% {
+        transform: translate(-50%, -50%) rotate(0deg);
+    }
+
+    60% {
+        transform: translate(-50%, -50%) rotate(20deg);
+    }
+
+    100% {
+        transform: translate(-50%, -50%) rotate(-120deg);
+    }
+}
+
+/* Styling replay button */
+.replay {
+    cursor: pointer;
+    font-size: small;
+    padding: 5px 8px;
+    border: 1px solid aqua;
+    outline: none;
+}
