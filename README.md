@@ -20,3 +20,4 @@ Huge shout out to @bradtraversy for his his awesome idea and for his ongoing con
 | [Random Choice Picker](https://github.com/MelodyGhost/html-css-js-project/tree/main/random-choice-picker)  | [Live](https://melodyghost.github.io/html-css-js-project/random-choice-picker)  |
 | [Insta Love Effect](https://github.com/MelodyGhost/html-css-js-project/tree/main/insta-love-effect)  | [Live](https://melodyghost.github.io/html-css-js-project/insta-love-effect)  |
 | [Animated Navigation(Rolling)](https://github.com/MelodyGhost/html-css-js-project/tree/main/rolling-animated-navigation)  | [Live](https://melodyghost.github.io/html-css-js-project/rolling-animated-navigation)  |
+| [Event Key Code](https://github.com/MelodyGhost/html-css-js-project/tree/main/event-key-code)  | [Live](https://melodyghost.github.io/html-css-js-project/event-key-code)  |
