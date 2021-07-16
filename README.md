@@ -15,8 +15,8 @@ Huge shout out to @bradtraversy for his his awesome idea and for his ongoing con
 | [Vertical Double Slider](https://github.com/MelodyGhost/html-css-js-project/tree/main/double-vertical-slider)  | [Live](https://melodyghost.github.io/html-css-js-project/double-vertical-slider/)  |
 | [Fan Increment Counter](https://github.com/MelodyGhost/html-css-js-project/tree/main/fan-increment-counter)  | [Live](https://melodyghost.github.io/html-css-js-project/fan-increment-counter)  |
 | [Movie Query Site](https://github.com/MelodyGhost/html-css-js-project/tree/main/latest-movie)  | [Live](https://melodyghost.github.io/html-css-js-project/latest-movie)  |
-| [Placeholder For Loading Content](https://github.com/MelodyGhost/html-css-js-project/tree/loading-content-placeholder)  | [Live](https://melodyghost.github.io/html-css-js-project/loading-content-placeholder)  |
-| [Wavy Login Form](https://github.com/MelodyGhost/html-css-js-project/tree/waving-input-login-form)  | [Live](https://melodyghost.github.io/html-css-js-project/waving-input-login-form)  |
-| [Random Choice Picker](https://github.com/MelodyGhost/html-css-js-project/tree/random-choice-picker)  | [Live](https://melodyghost.github.io/html-css-js-project/random-choice-picker)  |
-| [Insta Love Effect](https://github.com/MelodyGhost/html-css-js-project/tree/insta-love-effect)  | [Live](https://melodyghost.github.io/html-css-js-project/insta-love-effect)  |
-| [Animated Navigation(Rolling)](https://github.com/MelodyGhost/html-css-js-project/tree/rolling-animated-navigation)  | [Live](https://melodyghost.github.io/html-css-js-project/rolling-animated-navigation)  |
+| [Placeholder For Loading Content](https://github.com/MelodyGhost/html-css-js-project/tree/main/loading-content-placeholder)  | [Live](https://melodyghost.github.io/html-css-js-project/loading-content-placeholder)  |
+| [Wavy Login Form](https://github.com/MelodyGhost/html-css-js-project/tree/main/waving-input-login-form)  | [Live](https://melodyghost.github.io/html-css-js-project/waving-input-login-form)  |
+| [Random Choice Picker](https://github.com/MelodyGhost/html-css-js-project/tree/main/random-choice-picker)  | [Live](https://melodyghost.github.io/html-css-js-project/random-choice-picker)  |
+| [Insta Love Effect](https://github.com/MelodyGhost/html-css-js-project/tree/main/insta-love-effect)  | [Live](https://melodyghost.github.io/html-css-js-project/insta-love-effect)  |
+| [Animated Navigation(Rolling)](https://github.com/MelodyGhost/html-css-js-project/tree/main/rolling-animated-navigation)  | [Live](https://melodyghost.github.io/html-css-js-project/rolling-animated-navigation)  |
